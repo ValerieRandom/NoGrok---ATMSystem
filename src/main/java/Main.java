@@ -1,8 +1,10 @@
+import Defined.Menu;
+
 public class Main {
 
     // 程式進入口
     public static void main(String[] args) {
-        System.out.println("Welcome to simple ATM system");
+        Menu.WelcomePage();
 
     }
 }
