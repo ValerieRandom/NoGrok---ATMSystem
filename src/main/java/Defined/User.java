@@ -3,9 +3,9 @@ package Defined;
 class User {
 
      private String Account;
-     private int PassWord;
+     private String PassWord;
 
-     public User(int passWord, String account, int total) {
+     public User(String passWord, String account, int total) {
          PassWord = passWord;
          Account = account;
      }
@@ -17,11 +17,11 @@ class User {
          Account = account;
      }
 
-     public int getPassWord() {
+     public String getPassWord() {
          return PassWord;
      }
 
-     public void setPassWord(int passWord) {
+     public void setPassWord(String passWord) {
          PassWord = passWord;
      }
 

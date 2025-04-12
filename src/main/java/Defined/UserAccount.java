@@ -2,46 +2,48 @@ package Defined;
 
 public class UserAccount {
 
-    private int Total;
-    private int WithdrawalAmount;
-    private int SaveMoney;
-    public UserAccount(int withdrawalAmount, int saveMoney, int total, int accountNumber) {
+    private String Total;
+    private String WithdrawalAmount;
+    private String SaveMoney;
+    private String AccountNumber;
+
+    public UserAccount(String withdrawalAmount, String saveMoney, String total, String accountNumber) {
         WithdrawalAmount = withdrawalAmount;
         SaveMoney = saveMoney;
         Total = total;
         AccountNumber = accountNumber;
     }
-    private int AccountNumber;
 
-    public int getAccountNumber() {
+    public String getAccountNumber() {
         return AccountNumber;
     }
 
-    public void setAccountNumber(int accountNumber) {
+    public void setAccountNumber(String accountNumber) {
         AccountNumber = accountNumber;
+
     }
 
-    public int getTotal() {
+    public String getTotal() {
         return Total;
     }
 
-    public void setTotal(int total) {
+    public void setTotal(String total) {
         Total = total;
     }
 
-    public int getWithdrawalAmount() {
+    public String getWithdrawalAmount() {
         return WithdrawalAmount;
     }
 
-    public void setWithdrawalAmount(int withdrawalAmount) {
+    public void setWithdrawalAmount(String withdrawalAmount) {
         WithdrawalAmount = withdrawalAmount;
     }
 
-    public int getSaveMoney() {
+    public String getSaveMoney() {
         return SaveMoney;
     }
 
-    public void setSaveMoney(int saveMoney) {
+    public void setSaveMoney(String saveMoney) {
         SaveMoney = saveMoney;
     }
 
