@@ -21,9 +21,9 @@ public class Menu {
     }
 
     public static void SelectMenu(String UserAnswer){
-        void Switch (UserAnswer);
 
-        case "1":
+
+       // case "1":
 
     }
 

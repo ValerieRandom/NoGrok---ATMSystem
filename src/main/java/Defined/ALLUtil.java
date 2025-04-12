@@ -14,9 +14,7 @@ public class ALLUtil {
         return UserAnswer;
     }
 
-    public String Auth (String UserAccountAnswer, String UserPWAnswer ){
-
-    }
+    //public String Auth (String UserAccountAnswer, String UserPWAnswer ){}
 
 
 }
