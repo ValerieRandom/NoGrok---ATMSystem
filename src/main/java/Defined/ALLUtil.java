@@ -4,8 +4,6 @@ import java.util.Scanner;
 
 public class ALLUtil {
 
-
-    // 抽象化
     public static String UserAnswer(){
 
         Scanner UserAnswered = new Scanner(System.in);
@@ -14,7 +12,20 @@ public class ALLUtil {
         return UserAnswer;
     }
 
-    //public String Auth (String UserAccountAnswer, String UserPWAnswer ){}
 
+    public static void SaveMoney() {
+        System.out.println("存錢");
+    }
 
+    public static void TakeMoney() {
+        System.out.println("提錢");
+    }
+
+    public static void CheckAmount() {
+        System.out.println(("查詢餘額"));
+    }
+
+    public static void Logout() {
+        System.out.println("登出 結束操作");
+    }
 }

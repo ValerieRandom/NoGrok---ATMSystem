@@ -1,20 +1,25 @@
 import Defined.Menu;
 
+import static Defined.Menu.SelectMenu;
+
 public class Main {
 
     // 程式進入口
     public static void main(String[] args) {
 
-        System.out.println("請輸入您的帳戶及密碼，驗證成功我們將進入主選單\n"+
-                "帳號：");
+        System.out.println("請輸入您的帳戶及密碼，驗證成功我們將進入主選單\n");
         System.out.println("請輸入您的帳號");
         Menu.AcountAndPassword();
         System.out.println("請輸入您的密碼");
         Menu.AcountAndPassword();
 
+        while(true){
+            String UserAnswer = Menu.ShowMenu();
+            SelectMenu(UserAnswer);
+     }
 
-        Menu.ShowMenu();
-    }
+}
+
 }
 
 
