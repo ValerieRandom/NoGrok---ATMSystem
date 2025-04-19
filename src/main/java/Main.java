@@ -1,37 +1,25 @@
-import Defined.Menu;
+import Defined.ALLUtil;
 
-import static Defined.Menu.SelectMenu;
+import java.sql.SQLException;
+import java.util.Objects;
+
 
 public class Main {
 
-    // 程式進入口
-    public static void main(String[] args) {
+    public static void main(String[] args) throws SQLException {
 
-        System.out.println("請輸入您的帳戶及密碼，驗證成功我們將進入主選單\n");
-        System.out.println("請輸入您的帳號");
-        Menu.AcountAndPassword();
-        System.out.println("請輸入您的密碼");
-        Menu.AcountAndPassword();
+        System.out.println("請問是否是第一次使用本系統？(是/否) \n");
+        String UserAnswer = ALLUtil.UserAnswer();
+        if (Objects.equals(UserAnswer, "是")){
 
-        while(true){
-            String UserAnswer = Menu.ShowMenu();
-            SelectMenu(UserAnswer);
-     }
+            ALLUtil.Register(UserAnswer);
+        }
+        else {
 
-}
+            ALLUtil.Login(UserAnswer);
+        }
+    }
 
 }
 
 
-    /**
-     *
-     * 主選單生成
-     * 1. 註冊帳號密碼
-     * 2. 帳戶密碼輸入
-     * 3. 選擇業務 -
-     * 存款
-     * 取款
-     * 查詢餘額
-     * 3. 顯示業務結果
-     *
-     **/
